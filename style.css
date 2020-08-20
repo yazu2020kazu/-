@@ -1,0 +1,372 @@
+@charset "UTF-8";
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+html,
+body,
+p,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Verdana, Arial, Helvetica, meirio, メイリオ, "Hiragino Maru Gothic Pro", "ヒラギノ丸ゴ Pro W4", Osaka, "ＭＳ Ｐゴシック", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: #515151;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: #fff;
+  overflow-x: hidden;
+  overflow-wrap: break-word;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  border: none;
+}
+
+li {
+  list-style: none;
+}
+
+/******/
+body {
+  position: relative;
+  background: #F6F6F6;
+}
+
+.top-border {
+  position: absolute;
+  content: "";
+  background: #6CC6C4;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 8px;
+}
+
+.container {
+  width: 100%;
+  max-width: 920px;
+  margin: 0 auto;
+}
+
+/***  header  ***/
+header {
+  padding-top: 8px;
+}
+
+.header-inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.header-left {
+  margin-right: auto;
+  margin-top: 50px;
+}
+
+.header-txt {
+  font-size: 10px;
+  margin: 12px 0 6px;
+  text-align: right;
+}
+
+.header-tel {
+  font-size: 26px;
+  text-align: right;
+  line-height: 1.8;
+}
+
+.header-tel::before {
+  content: "\f879";
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 900;
+  font-size: 20px;
+  padding-right: 15px;
+}
+
+.header-date {
+  font-size: 10px;
+  border: 1px solid #D6D6D6;
+  padding: 9px 20px;
+  line-height: 1;
+}
+
+.header-date::after {
+  content: "日祝 休診";
+  color: #b22c00;
+  padding-left: 5px;
+}
+
+/***  header nav   ***/
+.header-list ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  list-style: none;
+  text-align: center;
+  border: 1px solid #6CC6C4;
+  background: -webkit-gradient(linear, left top, left bottom, from(#9CE3E1), to(#6CC6C4));
+  background: linear-gradient(to bottom, #9CE3E1, #6CC6C4);
+  border-radius: 5px;
+}
+
+.header-list li {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 1;
+          flex: 0 0 1;
+  display: inline-block;
+  width: 100%;
+  padding: 18px 0;
+  border-right: 1px solid #99e1df;
+  border-left: 1px solid #79cecc;
+}
+
+.header-list li:first-child {
+  border-left: none;
+}
+
+.header-list li:last-child {
+  border-right: none;
+}
+
+.header-list li:hover {
+  opacity: 0.6;
+  position: relative;
+  top: 1px;
+  left: 1px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#6CC6C4), to(#9CE3E1));
+  background: linear-gradient(to bottom, #6CC6C4, #9CE3E1);
+}
+
+.header-list .header-list-item {
+  font-weight: 700;
+  color: #fff;
+  display: block;
+  line-height: 1.2;
+}
+
+.header-list .header-list-item span {
+  font-size: 10px;
+  font-weight: 700;
+  color: #fff;
+}
+
+/*** wrapper ***/
+.wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  margin: 20px 0;
+}
+
+/***  MAIN  ***/
+/***  Top  ***/
+main {
+  width: 69.5652%;
+}
+
+aside {
+  width: 28.2608%;
+  margin-right: 20px;
+}
+
+.top-picture {
+  text-align: right;
+}
+
+.news {
+  margin-top: 5px;
+  background: #FFF;
+}
+
+.news-wrap {
+  padding: 20px;
+}
+
+.news-title {
+  font-size: 16px;
+  font-weight: bold;
+  padding: 15px 0;
+  border-bottom: 3px solid #6CC6C4;
+}
+
+.news-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 10px;
+  border-bottom: 1px dotted #cccccc;
+}
+
+.news-list {
+  width: 140px;
+  font-size: 13px;
+  font-weight: bold;
+  padding: .8em 0;
+}
+
+.news-list-item {
+  width: 440px;
+  font-size: 13px;
+  font-weight: 400;
+  margin: 0;
+  padding: .8em .3em;
+  line-height: 1.5;
+}
+
+/**** aside ****/
+.aside-box {
+  border: 1px solid #6CC6C4;
+  border-radius: 5px 5px 0 0;
+}
+
+.aside-box:first-child {
+  margin-bottom: 20px;
+}
+
+.aside-title {
+  font-size: 16px;
+  font-weight: bold;
+  color: #FFF;
+  background: -webkit-gradient(linear, left top, left bottom, from(#9CE3E1), to(#6CC6C4));
+  background: linear-gradient(to bottom, #9CE3E1, #6CC6C4);
+  line-height: 1;
+  padding: 14px;
+}
+
+.aside-list {
+  padding: 0 10px 20px;
+  color: #FFF;
+}
+
+.aside-list-item-link {
+  color: #515151;
+  display: block;
+  font-weight: bold;
+  line-height: 1;
+  padding: 14px 15px 14px 25px;
+  border-bottom: 1px solid #6CC6C4;
+  position: relative;
+}
+
+.aside-list-item-link::before {
+  content: '';
+  display: inline-block;
+  position: absolute;
+  background: #6CC6C4;
+  width: 8px;
+  height: 8px;
+  top: 18px;
+  left: 5px;
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+}
+
+.aside-list-item-link:hover {
+  opacity: 0.6;
+  color: #6CC6C4;
+}
+
+.aside-box:last-child a:hover {
+  color: #aec24c;
+}
+
+/*** footer ***/
+.footer-nav {
+  background: #6CC6C4;
+  border-radius: 5px;
+  padding: 5px 40px;
+}
+
+.footer-nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.footer-nav li {
+  padding-right: 40px;
+}
+
+.footer-nav li:last-child {
+  padding-right: 0;
+}
+
+.footer-list-item {
+  font-size: 13px;
+  color: #fff;
+  display: inline-block;
+  position: relative;
+}
+
+.footer-list-item::before {
+  content: "";
+  position: absolute;
+  top: 3px;
+  left: -20px;
+  margin: auto;
+  background-color: #6CC6C4;
+  border: solid 2px #FFF;
+  width: 12px;
+  height: 12px;
+  border-radius: 60px;
+}
+
+.footer-list-item:hover {
+  text-decoration: underline;
+}
+
+.footer-address {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  font-size: 13px;
+  padding: 10px 0;
+  border-bottom: 2px solid #6CC6C4;
+}
+
+.footer-address p {
+  padding-right: 5px;
+}
+
+.footer-address p:last-child {
+  padding-right: 0;
+}
+
+.footer-address .foooter-address-title {
+  font-weight: bold;
+}
+
+.copy-right {
+  font-size: 12px;
+  text-align: center;
+  padding: 10px 0;
+}
+/*# sourceMappingURL=style.css.map */
